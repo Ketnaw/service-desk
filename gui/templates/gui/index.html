@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>serviceDesk</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static "ExtJS/tapp-all.css" %}">
+            <link rel="stylesheet" type="text/css" href="{% static "ExtJS/style.css" %}">
+        <script type="text/javascript" src="{% static "ExtJS/ext-all-debug.js" %}"></script>
+        <script type="text/javascript" src="{% static "ExtJS/app.js" %}"></script>
+    </head>
+    <body>
+        {% block body %}
+        {% block content %}{% endblock %}
+        {% endblock %}
+    </body>
+</html>
