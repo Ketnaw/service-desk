@@ -32,7 +32,7 @@ def EditIncident(request):
             incident = Incident.objects.get(incidentId = request.POST.get('recId'))
             if request.POST.get('serviceComment'):
                 serviceComment = request.POST.get('serviceComment')
-                incident.serviceComment = serviceComment
+                incident.serviceText = serviceComment
                 incident.save()
                 
             if request.POST.get('statusId'):
